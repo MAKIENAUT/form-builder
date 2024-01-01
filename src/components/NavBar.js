@@ -11,7 +11,7 @@ export default function NavBar() {
       <nav>
          <div className="Logo">
             <FontAwesomeIcon icon={faStrikethrough} />
-            <h1>Logo</h1>
+            <p>Logo</p>
          </div>
       </nav>
    )
