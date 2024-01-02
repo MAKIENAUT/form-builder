@@ -1,12 +1,19 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import FormSuggestionButton from "./FormSuggestionButton"
 
 export default function Form() {
    return (
       <section className="form-parent">
-         <h1 class="form-header">Forms</h1>
-         <div class="form-container">
+         <h1 className="form-header">Forms</h1>
+         <div className="form-container">
             <div className="form-wrapper">
-               <input className="main-form-input" type="text" placeholder="What form do you need?"></input>
+               <div className="main-form">
+                  <textarea className="main-form-input" type="text" placeholder="What form do you need?"></textarea>
+                  <button className="main-form-button">
+                     <FontAwesomeIcon icon={faPaperPlane} />
+                  </button>
+               </div>
                <div className="form-suggestions">
                   <FormSuggestionButton
                      b="Placeholder Title"

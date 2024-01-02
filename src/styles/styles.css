@@ -132,11 +132,57 @@ main {
 }
 
 .Profile_Button,
-.Notification_Icon,
 .Profile_Options {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.notification-container {
+  width: 175px;
+  position: absolute;
+  top: 125%;
+  right: 0;
+  padding: 5px 15px;
+  background-color: white;
+  color: black;
+}
+
+.profile-dropdown-wrapper {
+  position: relative;
+}
+
+.profile-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-dropdown-container {
+  width: 175px;
+  position: absolute;
+  top: 125%;
+  right: 0;
+  padding: 5px 15px;
+  background-color: white;
+  color: black;
+}
+
+.edit-profile {
+  text-decoration: none;
+  color: black;
 }
 
 /* FORM.JS */
@@ -166,9 +212,24 @@ main {
   gap: 20px;
 }
 
+.main-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .main-form-input {
   width: 100%;
   padding: 10px;
+  padding-inline: 10px 30px;
+  resize: none;
+}
+
+.main-form-button {
+  position: absolute;
+  right: 0;
+  padding: 3px;
+  margin-right: 10px;
 }
 
 .form-suggestions {
